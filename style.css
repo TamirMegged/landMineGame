@@ -7,9 +7,13 @@ body {
 }
 #header {
     font-size: 6em;
-    margin: 50px;
-    margin-top: 20px;
+    margin: 20px;
     background-color: rgb(45, 82, 45);
+    color: white;
+}
+#secondaryHeader {
+    font-size: 2em;
+    margin: 10px;
     color: white;
 }
 canvas {
