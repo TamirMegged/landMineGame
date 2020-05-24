@@ -9,12 +9,20 @@
 <body>
     <header id="header">Avoid the Land Mine</header>
     <canvas id="canvas" width="800px" height="520px"></canvas>
+    <div id="overlay"></div>
     <div id="gameOver">
-        <div id="modalHeader">
+        <div class="modalHeader">
             <div>Game Over</div>
-            <button id="closeModal" onclick="closeModal()">&times;</button>
+            <button class="closeModal" onclick="closeGameOver()">&times;</button>
         </div>
         <div>You just stepped on a LAND MINE you are dead bro.</div>
+    </div>
+    <div id="levelFinished">
+        <div class="modalHeader" style="background-color: black; color: white;">
+            <div id="levelXFinished" style="color: white"></div>
+            <button class="closeModal" style="color:white" onclick="closeLevelFinished()">&times;</button>
+        </div>
+        <div>Good work soldier. Let's continue towards the enemy.</div>
     </div>
     <script src="app.js"></script>
 </body>
